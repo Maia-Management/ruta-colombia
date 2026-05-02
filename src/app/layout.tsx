@@ -108,7 +108,7 @@ export default function RootLayout({
 
         {/* WhatsApp float button */}
         <a
-          href="https://wa.me/19034598763"
+          href="https://wa.me/573195962773"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat with us on WhatsApp"
@@ -125,5 +125,3 @@ export default function RootLayout({
         </a>
       </body>
     </html>
-  );
-}
