@@ -335,4 +335,10 @@ export default function HomePage() {
             href="/about/"
             className="inline-block bg-teal-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-teal-500 transition-colors"
           >
-            Learn mor
+            Learn more →
+          </Link>
+        </div>
+      </section>
+    </>
+  );
+}
