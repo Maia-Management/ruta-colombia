@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@RutaColombia',
+    site: '@MaiaGroupCO',
     creator: '@RutaColombia',
     title: 'Ruta Colombia — Colombia Travel Guide & Expat Resource',
     description: 'Your definitive guide to travelling, living, and investing in Colombia.',

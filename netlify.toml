@@ -162,6 +162,12 @@
 
 # Defensive catch-all for any other `/medellan/*` URL (e.g. a city slug typo)
 [[redirects]]
+  from = "/medellan/"
+  to = "/medellin/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/medellan/*"
   to = "/medellin/:splat"
   status = 301
