@@ -121,3 +121,48 @@
   to = "/"
   status = 301
   force = true
+
+# medellan typo slug 301s — old article filenames had `medellan` (missing the
+# second `l`); files were renamed in commit 3b0d52c.
+[[redirects]]
+  from = "/medellin/real-estate/best-neighbourhoods-medellan/"
+  to = "/medellin/real-estate/best-neighbourhoods-medellin/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/medellin/food-drink/best-restaurants-medellan/"
+  to = "/medellin/food-drink/best-restaurants-medellin/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/medellin/community/cost-of-living-medellan/"
+  to = "/medellin/community/cost-of-living-medellin/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/medellin/community/digital-nomad-guide-medellan/"
+  to = "/medellin/community/digital-nomad-guide-medellin/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/medellin/things-to-do/nightlife-medellan/"
+  to = "/medellin/things-to-do/nightlife-medellin/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/medellin/things-to-do/things-to-do-medellan/"
+  to = "/medellin/things-to-do/things-to-do-medellin/"
+  status = 301
+  force = true
+
+# Defensive catch-all for any other `/medellan/*` URL (e.g. a city slug typo)
+[[redirects]]
+  from = "/medellan/*"
+  to = "/medellin/:splat"
+  status = 301
+  force = true

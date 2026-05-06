@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+    site: '@RutaColombia',
+    creator: '@RutaColombia',
     title: 'Contact Ruta Colombia',
     description: 'Get in touch with Ruta Colombia.',
     images: ['https://ruta-colombia.com/og-image.jpg'],

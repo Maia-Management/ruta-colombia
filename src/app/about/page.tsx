@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+    site: '@RutaColombia',
+    creator: '@RutaColombia',
     title: 'About Ruta Colombia — Travel & Expat Guides',
     description:
       'Expert local knowledge on living, working, investing, and exploring Colombia.',

@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+    site: '@RutaColombia',
+    creator: '@RutaColombia',
     title: 'Venezuela Travel Guide — Coming Soon | Ruta Colombia',
     description: 'A comprehensive travel and expat guide to Venezuela is coming soon to Ruta Colombia.',
     images: ['https://ruta-colombia.com/og-image.jpg'],

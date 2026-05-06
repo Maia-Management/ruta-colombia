@@ -44,6 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description: article.metaDescription || article.excerpt,
+    authors: [{ name: article.author }],
     alternates: {
       canonical: `https://ruta-colombia.com/${city}/${category}/${slug}/`,
     },
@@ -57,6 +58,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: 'summary_large_image',
+      site: '@RutaColombia',
+      creator: '@RutaColombia',
       title,
       description: article.metaDescription || article.excerpt,
       images: [image],
