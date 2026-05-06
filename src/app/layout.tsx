@@ -125,3 +125,5 @@ export default function RootLayout({
         </a>
       </body>
     </html>
+  );
+}

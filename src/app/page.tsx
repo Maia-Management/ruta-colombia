@@ -345,4 +345,14 @@ export default function HomePage() {
             </a>
             . We combine on-the-ground expertise with professional knowledge in real estate, law, gastronomy, and more — to help you live, invest, and thrive in Colombia.
           </p>
-   
+          <Link
+            href="/about/"
+            className="inline-block bg-teal-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-teal-500 transition-colors"
+          >
+            Learn more →
+          </Link>
+        </div>
+      </section>
+    </>
+  );
+}

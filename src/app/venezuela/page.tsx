@@ -1,6 +1,28 @@
-﻿'use client';
-
+import type { Metadata } from 'next';
 import Link from '@/components/Link';
+
+export const metadata: Metadata = {
+  title: 'Venezuela Travel Guide — Coming Soon',
+  description:
+    'A comprehensive travel and expat guide to Venezuela is coming soon to Ruta Colombia. Get notified when it launches.',
+  alternates: {
+    canonical: 'https://ruta-colombia.com/venezuela/',
+  },
+  openGraph: {
+    title: 'Venezuela Travel Guide — Coming Soon | Ruta Colombia',
+    description:
+      'A comprehensive travel and expat guide to Venezuela is coming soon to Ruta Colombia.',
+    url: 'https://ruta-colombia.com/venezuela/',
+    type: 'website',
+    images: [{ url: 'https://ruta-colombia.com/og-image.jpg', width: 1200, height: 630, alt: 'Venezuela — Coming Soon' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Venezuela Travel Guide — Coming Soon | Ruta Colombia',
+    description: 'A comprehensive travel and expat guide to Venezuela is coming soon to Ruta Colombia.',
+    images: ['https://ruta-colombia.com/og-image.jpg'],
+  },
+};
 
 export default function VenezuelaPage() {
   return (
@@ -40,10 +62,6 @@ export default function VenezuelaPage() {
           <div className="text-gray-400 text-sm">
             <p>In the meantime, explore our guides for other countries:</p>
             <div className="mt-4 flex flex-wrap justify-center gap-3">
-              <Link href="/colombia/" className="text-teal-400 hover:text-teal-300 underline">
-                Colombia
-              </Link>
-              <span className="text-gray-600">•</span>
               <Link href="/medellin/" className="text-teal-400 hover:text-teal-300 underline">
                 Medellín
               </Link>
