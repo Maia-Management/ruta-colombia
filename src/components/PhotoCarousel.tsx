@@ -67,6 +67,8 @@ export default function PhotoCarousel({
             alt={slide.alt}
             className="w-full h-full object-cover"
             loading={i === 0 ? 'eager' : 'lazy'}
+            width={1200}
+            height={600}
           />
         </div>
       ))}

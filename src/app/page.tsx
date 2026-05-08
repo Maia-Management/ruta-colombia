@@ -63,7 +63,7 @@ export default function HomePage() {
       {/* Hero — Medellín primary */}
       <section className="relative bg-gradient-to-br from-violet-950 via-violet-800 to-violet-600 text-white overflow-hidden">
 {/* Hero image - gpt-image-2 */}
-<figure style={{margin:0}}><img src="/images/colombia-hero.png" alt="Colombia panoramic landscape coffee region Cartagena Caribbean" style={{width:'100%',maxHeight:'500px',objectFit:'cover'}} loading="eager" /></figure>
+<figure style={{margin:0}}><img src="/images/colombia-hero.webp" alt="Colombia panoramic landscape coffee region Cartagena Caribbean" style={{width:'100%',maxHeight:'500px',objectFit:'cover'}} loading="eager" fetchPriority="high" width={1024} height={1024} /></figure>
 
         <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-teal-300 via-transparent to-transparent" />
         <div className="relative max-w-5xl mx-auto px-4 py-20 text-center">
