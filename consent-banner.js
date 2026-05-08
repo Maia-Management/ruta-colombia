@@ -116,6 +116,7 @@
             <small>
               <strong>Cumplimiento Legal:</strong> Ley 1581 de 2012 (Protección de Datos en Colombia)
               <br/>MAIA MANAGEMENT GROUP S.A.S. — NIT 901.862.977-7
+              <br/>Calle 24 #3-99, Edificio Banco de Bogotá, Suite 1102, Level 11, Santa Marta
             </small>
           </div>
 
