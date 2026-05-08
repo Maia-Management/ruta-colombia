@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 
 const CONSENT_KEY = 'ruta-colombia-consent';
-const GA_ID = 'G-H5TBPYHRWE';
+const GA_ID = 'G-8B5225MXE5';
 const ADSENSE_CLIENT = 'ca-pub-2469196723812841';
 
 type ConsentState = {
