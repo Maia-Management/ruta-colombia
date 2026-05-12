@@ -101,7 +101,7 @@ export default function PrivacyPolicy() {
         </p>
         <p>
           <strong>Maia Management Group S.A.S.</strong><br />
-          Calle 24 #3-99, Santa Marta, Colombia<br />
+          Calle 24 #3-99, Edificio Banco de Bogotá, Suite 1102, Level 11, Santa Marta, Colombia<br />
           NIT: 901.862.977-7<br />
           Email: info@ruta-colombia.com
         </p>
