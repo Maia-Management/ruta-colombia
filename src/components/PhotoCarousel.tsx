@@ -84,14 +84,14 @@ export default function PhotoCarousel({
       {/* Arrows — only on multi-slide */}
       {slides.length > 1 && (
         <>
-          <button
+          <button type="button"
             onClick={() => go(current - 1)}
             className="absolute left-2 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-black/40 hover:bg-black/70 text-white text-xl leading-none flex items-center justify-center transition-colors z-10"
             aria-label="Previous photo"
           >
             ‹
           </button>
-          <button
+          <button type="button"
             onClick={() => go(current + 1)}
             className="absolute right-2 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-black/40 hover:bg-black/70 text-white text-xl leading-none flex items-center justify-center transition-colors z-10"
             aria-label="Next photo"
@@ -105,7 +105,7 @@ export default function PhotoCarousel({
       {slides.length > 1 && (
         <div className="absolute bottom-2 inset-x-0 flex justify-center gap-1.5 z-10">
           {slides.map((_, i) => (
-            <button
+            <button type="button"
               key={i}
               onClick={() => go(i)}
               className="p-2 flex items-center justify-center"

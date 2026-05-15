@@ -30,7 +30,7 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-2">
             {/* Cities dropdown */}
             <div className="relative">
-              <button
+              <button type="button"
                 className="flex items-center gap-1 text-sm text-gray-300 hover:text-white px-3 py-1.5 rounded-md hover:bg-gray-800 transition-colors"
                 onClick={() => setCityMenuOpen(!cityMenuOpen)}
                 onBlur={() => setTimeout(() => setCityMenuOpen(false), 150)}
@@ -86,7 +86,7 @@ export default function Header() {
           </div>
 
           {/* Mobile hamburger */}
-          <button
+          <button type="button"
             className="md:hidden p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center text-gray-300 hover:text-white"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
