@@ -1,7 +1,7 @@
 ﻿/**
  * Consent Banner - Ruta Colombia
  * GDPR + Ley 1581 de 2012 (Colombia) compliance
- * Company: MAIA MANAGEMENT GROUP S.A.S. — NIT 901.862.977-7
+ * Company: MAIA MANAGEMENT S.A.S. — NIT 901.862.977-7
  */
 
 (function() {
@@ -87,7 +87,7 @@
             <h2>Preferencias de Privacidad</h2>
             <p>Usamos tecnologías como cookies para almacenar y acceder a información de dispositivos, garantizar calidad de contenido y publicidad personalizada, medir rendimiento y analizar datos de tráfico. Puedes cambiar tus preferencias en cualquier momento visitando nuestras <a href="/privacy/" target="_blank">políticas de privacidad</a>.</p>
           </div>
-          
+
           <div class="consent-banner-customization" id="consent-customization" style="display: none;">
             <div class="consent-option">
               <label>
@@ -122,7 +122,7 @@
           <div class="consent-banner-footer">
             <small>
               <strong>Cumplimiento Legal:</strong> Ley 1581 de 2012 (Protección de Datos en Colombia)
-              <br/>MAIA MANAGEMENT GROUP S.A.S. — NIT 901.862.977-7
+              <br/>MAIA MANAGEMENT S.A.S. — NIT 901.862.977-7
               <br/>Calle 24 #3-99, Edificio Banco de Bogotá, Suite 1102, Level 11, Santa Marta
             </small>
           </div>

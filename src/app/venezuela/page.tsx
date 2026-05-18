@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ruta-colombia.com/venezuela/',
   },
+  robots: {
+    index: false,
+    follow: false,
+  },
   openGraph: {
     title: 'Venezuela Travel Guide — Coming Soon | Ruta Colombia',
     description:

@@ -24,7 +24,7 @@ export default function TermsOfService() {
 
         <h2 className="font-serif text-2xl font-bold text-gray-900 mt-8 mb-4">2. Service Description</h2>
         <p>
-          Ruta Colombia is a travel and lifestyle guide providing informational content, travel guides, lifestyle recommendations, and resources about Colombia. The service is operated by Maia Management Group S.A.S., a company registered in Colombia.
+          Ruta Colombia is a travel and lifestyle guide providing informational content, travel guides, lifestyle recommendations, and resources about Colombia. The service is operated by Maia Management S.A.S., a company registered in Colombia.
         </p>
         <p>
           Our website offers:
@@ -38,10 +38,10 @@ export default function TermsOfService() {
 
         <h2 className="font-serif text-2xl font-bold text-gray-900 mt-8 mb-4">3. Intellectual Property Rights</h2>
         <p>
-          All content on the Ruta Colombia website, including but not limited to text, images, graphics, logos, and videos, is the property of Maia Management Group S.A.S. or its content suppliers and is protected by international copyright laws.
+          All content on the Ruta Colombia website, including but not limited to text, images, graphics, logos, and videos, is the property of Maia Management S.A.S. or its content suppliers and is protected by international copyright laws.
         </p>
         <p>
-          You may view, print, and download content from our website for personal, non-commercial use only, provided that you retain all copyright and proprietary notices. Any other use of the content is strictly prohibited without prior written permission from Maia Management Group S.A.S.
+          You may view, print, and download content from our website for personal, non-commercial use only, provided that you retain all copyright and proprietary notices. Any other use of the content is strictly prohibited without prior written permission from Maia Management S.A.S.
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-gray-900 mt-8 mb-4">4. User Conduct</h2>
@@ -75,7 +75,7 @@ export default function TermsOfService() {
 
         <h2 className="font-serif text-2xl font-bold text-gray-900 mt-8 mb-4">6. Limitation of Liability</h2>
         <p>
-          To the fullest extent permitted by applicable law, in no event shall Maia Management Group S.A.S. or its officers, directors, employees, or agents be liable for any indirect, incidental, special, consequential, punitive, or exemplary damages arising from your use of or inability to use the website or content, including but not limited to damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages.
+          To the fullest extent permitted by applicable law, in no event shall Maia Management S.A.S. or its officers, directors, employees, or agents be liable for any indirect, incidental, special, consequential, punitive, or exemplary damages arising from your use of or inability to use the website or content, including but not limited to damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages.
         </p>
         <p>
           In no case shall our total liability to you exceed the amount you have paid to us through the website, if any.
@@ -93,7 +93,7 @@ export default function TermsOfService() {
 
         <h2 className="font-serif text-2xl font-bold text-gray-900 mt-8 mb-4">9. Modifications to Terms</h2>
         <p>
-          Maia Management Group S.A.S. reserves the right to modify these Terms of Service at any time. We will notify users of significant changes by updating the &quot;Last updated&quot; date at the top of this page. Your continued use of the website following the posting of changes constitutes your acceptance of such changes.
+          Maia Management S.A.S. reserves the right to modify these Terms of Service at any time. We will notify users of significant changes by updating the &quot;Last updated&quot; date at the top of this page. Your continued use of the website following the posting of changes constitutes your acceptance of such changes.
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-gray-900 mt-8 mb-4">10. Severability</h2>
@@ -106,9 +106,9 @@ export default function TermsOfService() {
           If you have questions about these Terms of Service, please contact us at:
         </p>
         <p>
-          <strong>Maia Management Group S.A.S.</strong><br />
+          <strong>Maia Management S.A.S.</strong><br />
           Colombia<br />
-          Email: info@ruta-colombia.com
+          Email: privacy@maia-management.com
         </p>
 
         <div className="mt-12 pt-8 border-t border-gray-200">

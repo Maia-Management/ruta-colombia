@@ -4,6 +4,8 @@
 @tailwind utilities;
 
 :root {
+  --maia-teal: #1B7A8C;
+  --maia-anchor: #1B7A8C;
   --background: #faf9f7;
   --foreground: #1a1a1a;
   /* FIX: Changed --teal-primary from #0d9488 to #0a7e73 to improve contrast ratio

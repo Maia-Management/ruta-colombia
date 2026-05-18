@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
 
         <h2 className="font-serif text-2xl font-bold text-gray-900 mt-8 mb-4">1. Who We Are</h2>
         <p>
-          Ruta Colombia is a travel and lifestyle guide for Colombia, operated by <strong>Maia Management Group S.A.S.</strong>, a company registered in Colombia. We are committed to protecting your privacy and ensuring you have a positive experience on our website.
+          Ruta Colombia is a travel and lifestyle guide for Colombia, operated by <strong>Maia Management S.A.S.</strong>, a company registered in Colombia. We are committed to protecting your privacy and ensuring you have a positive experience on our website.
         </p>
         <p>
           Website: https://ruta-colombia.com
@@ -100,10 +100,10 @@ export default function PrivacyPolicy() {
           If you have questions about this Privacy Policy, or if you wish to exercise any of your rights, please contact us at:
         </p>
         <p>
-          <strong>Maia Management Group S.A.S.</strong><br />
+          <strong>Maia Management S.A.S.</strong><br />
           Calle 24 #3-99, Edificio Banco de Bogotá, Suite 1102, Level 11, Santa Marta, Colombia<br />
           NIT: 901.862.977-7<br />
-          Email: info@ruta-colombia.com
+          Email: privacy@maia-management.com
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-gray-900 mt-8 mb-4">11. Changes to This Policy</h2>

@@ -1,6 +1,8 @@
 // AffiliateCTA.tsx — Travelpayouts affiliate CTA block
 // Usage: <AffiliateCTA type="hotels" city="Santa Marta" />
-// Replace TRAVELPAYOUTS_MARKER with real marker ID when account is created
+// Set NEXT_PUBLIC_TRAVELPAYOUTS_MARKER when the affiliate account is ready.
+
+const TRAVELPAYOUTS_MARKER = process.env.NEXT_PUBLIC_TRAVELPAYOUTS_MARKER ?? '';
 
 interface AffiliateCTAProps {
   type: 'hotels' | 'flights' | 'car-rental' | 'tours';
@@ -14,9 +16,9 @@ const CTA_CONFIG = {
     description: (city: string) => `Browse top-rated hotels in ${city} — compare prices from 50+ booking sites.`,
     bgColor: '#1a3a5c',
     accentColor: '#3b82f6',
-    // Travelpayouts Hotel Search Widget (placeholder — replace MARKER with real ID)
+    // Travelpayouts Hotel Search Widget
     linkTemplate: (city: string) =>
-      `https://tp.media/r?marker=TRAVELPAYOUTS_MARKER&trs=233248&p=4114&u=https%3A%2F%2Fwww.hotels.com%2Fsearch%3FdestinationId%3D${encodeURIComponent(city)}`,
+      `https://tp.media/r?marker=${TRAVELPAYOUTS_MARKER}&trs=233248&p=4114&u=https%3A%2F%2Fwww.hotels.com%2Fsearch%3FdestinationId%3D${encodeURIComponent(city)}`,
   },
   flights: {
     label: '✈️ Find cheap flights',
@@ -24,7 +26,7 @@ const CTA_CONFIG = {
     bgColor: '#1a3a3a',
     accentColor: '#10b981',
     linkTemplate: (city: string) =>
-      `https://tp.media/r?marker=TRAVELPAYOUTS_MARKER&trs=233248&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2F%3Fdestination%3D${encodeURIComponent(city)}`,
+      `https://tp.media/r?marker=${TRAVELPAYOUTS_MARKER}&trs=233248&p=4114&u=https%3A%2F%2Fwww.aviasales.com%2F%3Fdestination%3D${encodeURIComponent(city)}`,
   },
   'car-rental': {
     label: '🚗 Compare car rental deals',
@@ -32,7 +34,7 @@ const CTA_CONFIG = {
     bgColor: '#2a1a3a',
     accentColor: '#8b5cf6',
     linkTemplate: (city: string) =>
-      `https://tp.media/r?marker=TRAVELPAYOUTS_MARKER&trs=233248&p=4114&u=https%3A%2F%2Fwww.rentalcars.com%2FSearchResults.do%3Fcountry%3DColombia%26city%3D${encodeURIComponent(city)}`,
+      `https://tp.media/r?marker=${TRAVELPAYOUTS_MARKER}&trs=233248&p=4114&u=https%3A%2F%2Fwww.rentalcars.com%2FSearchResults.do%3Fcountry%3DColombia%26city%3D${encodeURIComponent(city)}`,
   },
   tours: {
     label: '🎟️ Book tours & activities',
@@ -40,11 +42,13 @@ const CTA_CONFIG = {
     bgColor: '#1a3a1a',
     accentColor: '#22c55e',
     linkTemplate: (city: string) =>
-      `https://tp.media/r?marker=TRAVELPAYOUTS_MARKER&trs=233248&p=4114&u=https%3A%2F%2Fwww.viator.com%2Fsearch%2F${encodeURIComponent(city)}`,
+      `https://tp.media/r?marker=${TRAVELPAYOUTS_MARKER}&trs=233248&p=4114&u=https%3A%2F%2Fwww.viator.com%2Fsearch%2F${encodeURIComponent(city)}`,
   },
 };
 
 export default function AffiliateCTA({ type, city = 'Colombia', className = '' }: AffiliateCTAProps) {
+  if (!TRAVELPAYOUTS_MARKER) return null;
+
   const config = CTA_CONFIG[type];
   const link = config.linkTemplate(city);
 

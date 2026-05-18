@@ -142,6 +142,12 @@ export default function Footer() {
               Join the Maia team
             </a>
           </p>
+          <p className="text-xs text-gray-500">
+            Privacy:{' '}
+            <a href="mailto:privacy@maia-management.com" className="text-teal-400 hover:text-teal-300 transition-colors">
+              privacy@maia-management.com
+            </a>
+          </p>
           <div className="flex gap-4 text-xs text-gray-500">
             <Link href="/privacy/" className="hover:text-gray-400 transition-colors">Privacy Policy</Link>
             <Link href="/terms/" className="hover:text-gray-400 transition-colors">Terms of Use</Link>
