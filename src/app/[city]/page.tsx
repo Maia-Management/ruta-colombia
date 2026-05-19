@@ -19,7 +19,7 @@ export function generateStaticParams() {
 
 const cityMeta: Record<string, { title: string; description: string; ogImage?: string }> = {
   medellin: {
-    title: 'Medellín Travel Guide — Expat Life & Things to Do',
+    title: 'Medellín Travel Guide — Expat Life',
     description:
       'Medellín travel guide: neighbourhoods, restaurants, things to do, cost of living, and expat tips in the City of Eternal Spring.',
     ogImage: 'https://ruta-colombia.com/og-medellin.jpg',
@@ -31,7 +31,7 @@ const cityMeta: Record<string, { title: string; description: string; ogImage?: s
     ogImage: 'https://ruta-colombia.com/og-santa-marta.jpg',
   },
   bogota: {
-    title: 'Bogotá Travel Guide — Neighbourhoods & Expat Tips',
+    title: 'Bogotá Travel Guide — Neighbourhoods',
     description:
       'Essential Bogotá travel guide: things to do, neighbourhoods, restaurants, nightlife, and practical expat advice in Colombia\'s capital.',
     ogImage: 'https://ruta-colombia.com/og-bogota.jpg',
@@ -49,13 +49,13 @@ const cityMeta: Record<string, { title: string; description: string; ogImage?: s
     ogImage: 'https://ruta-colombia.com/og-cali.jpg',
   },
   barranquilla: {
-    title: 'Barranquilla Travel Guide — Carnival & Living Costs',
+    title: 'Barranquilla Travel Guide — Carnival',
     description:
       'Barranquilla guide: carnival, things to do, restaurants, neighbourhoods, and cost of living in Colombia\'s Caribbean gateway.',
     ogImage: 'https://ruta-colombia.com/og-barranquilla.jpg',
   },
   bucaramanga: {
-    title: 'Bucaramanga Travel Guide — Parks, Costs & Expat Life',
+    title: 'Bucaramanga Travel Guide — Parks & Costs',
     description:
       'Discover Bucaramanga: parks, cost of living, things to do, and why expats like this clean, affordable city in the Andes foothills.',
     ogImage: 'https://ruta-colombia.com/og-bucaramanga.jpg',
