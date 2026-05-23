@@ -41,7 +41,7 @@ export const categories: Category[] = [
     name: 'Food & Drink',
     description: 'The best restaurants, bars, cafés, and food experiences across Colombian cities.',
     maia_brand: {
-      name: 'Be Vida Botánicas',
+      name: 'Be Vida',
       url: 'https://be-vida.com',
       tagline: 'Artisan RTD cocktails — tropical flavors of Colombia. Try them at El Sanatorio bar in Santa Marta.',
       color: '#14532d',

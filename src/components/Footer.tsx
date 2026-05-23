@@ -90,7 +90,7 @@ export default function Footer() {
                 { name: 'Maia Legal', url: 'https://maia-legal.com' },
                 { name: 'Maia Management', url: 'https://maia-management.com' },
                 { name: 'Mapaná Marine', url: 'https://mapana-marine.com' },
-                { name: 'Be Vida Botánicas', url: 'https://be-vida.com' },
+                { name: 'Be Vida', url: 'https://be-vida.com' },
                 { name: 'El Sanatorio', url: 'https://el-sanatorio.com' },
                 { name: 'LlevaLleva', url: 'https://lleva-lleva.com' },
               ].map((brand) => (
@@ -126,7 +126,7 @@ export default function Footer() {
             </a>
             {' '}(yakitori bar &amp; immersive horror experience) ·{' '}
             <a href="https://be-vida.com" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-teal-300 transition-colors">
-              Be Vida Botánicas
+              Be Vida
             </a>
             {' '}(premium craft cocktails)
           </p>

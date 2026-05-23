@@ -95,7 +95,7 @@ export default function AboutPage() {
           </li>
           <li>
             <a href="https://be-vida.com" target="_blank" rel="noopener noreferrer">
-              <strong>Be Vida Botánicas</strong>
+              <strong>Be Vida</strong>
             </a>{' '}
             — Artisan RTD cocktails made with Colombian botanicals
           </li>

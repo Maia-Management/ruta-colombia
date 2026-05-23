@@ -10,6 +10,7 @@ interface Props {
 export default function ArticleCard({ article, variant = 'default' }: Props) {
   const href = `/${article.city}/${article.category}/${article.slug}/`;
   const isCompact = variant === 'compact';
+  const thumbnailSrc = article.thumbnail || '/images/colombia-hero-optimized.webp';
 
   return (
     <article className={`group flex flex-col bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden h-full ${isCompact ? 'mb-4 last:mb-0' : ''}`}>
@@ -28,21 +29,13 @@ export default function ArticleCard({ article, variant = 'default' }: Props) {
           variant === 'featured' ? 'h-52' : isCompact ? 'h-32' : 'h-44'
         }`}
       >
-        {article.thumbnail ? (
-          <Image
-            src={article.thumbnail}
-            alt={`Cover image for: ${article.title}`}
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
-            // loading="lazy" is next/image's default; only set priority on above-fold images
-          />
-        ) : (
-          // FIX: Explicit placeholder when no thumbnail src is provided at all
-          <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
-            <span className="text-gray-700 text-sm font-medium">No image</span>
-          </div>
-        )}
+        <Image
+          src={thumbnailSrc}
+          alt={`Cover image for: ${article.title}`}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+        />
 
         {/* Category badge — overlaid on the image */}
         {article.category && (
