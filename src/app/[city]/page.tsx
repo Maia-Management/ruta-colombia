@@ -6,6 +6,7 @@ import PhotoCarousel from '@/components/PhotoCarousel';
 import { getAllArticlesByCity } from '@/lib/articles';
 import { categories } from '@/lib/categories';
 import { cities } from '@/lib/cities';
+import { BreadcrumbSchema } from '@/components/SchemaOrg';
 
 type CityParams = { city: string };
 
@@ -132,6 +133,12 @@ export default async function CityPage({ params }: Props) {
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://ruta-colombia.com/' },
+          { name: city.name, url: `https://ruta-colombia.com/${citySlug}/` },
+        ]}
+      />
       {/* ── City hero ──────────────────────────────────────────────────────────
           FIX: White text on a deep gradient (dark-to-mid tone) achieves the
           required WCAG AA 4.5:1 contrast.  The additional semi-transparent

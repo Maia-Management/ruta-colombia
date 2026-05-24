@@ -132,25 +132,36 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-gray-500">
-            © {year} Ruta Colombia — The Maia Group. All rights reserved.
+        <div className="border-t border-gray-800 pt-6 space-y-4">
+          <p className="text-xs text-gray-500 leading-relaxed">
+            © {year} Ruta Colombia. Ruta Colombia is part of the Maia ecosystem and operates under{' '}
+            <a
+              href="https://maia-management.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-teal-400 hover:text-teal-300 transition-colors"
+            >
+              Maia Management S.A.S.
+            </a>{' '}
+            — NIT 901.862.977-7 — Santa Marta, Colombia. All rights reserved.
           </p>
-          <p className="text-xs text-gray-500">
-            Work with us →{' '}
-            <a href="https://maia-management.com/empleo.html" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-teal-300 transition-colors">
-              Join the Maia team
-            </a>
-          </p>
-          <p className="text-xs text-gray-500">
-            Privacy:{' '}
-            <a href="mailto:privacy@maia-management.com" className="text-teal-400 hover:text-teal-300 transition-colors">
-              privacy@maia-management.com
-            </a>
-          </p>
-          <div className="flex gap-4 text-xs text-gray-500">
-            <Link href="/privacy/" className="hover:text-gray-400 transition-colors">Privacy Policy</Link>
-            <Link href="/terms/" className="hover:text-gray-400 transition-colors">Terms of Use</Link>
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
+            <p className="text-xs text-gray-500">
+              Work with us →{' '}
+              <a href="https://maia-management.com/empleo.html" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-teal-300 transition-colors">
+                Join the Maia team
+              </a>
+            </p>
+            <p className="text-xs text-gray-500">
+              Privacy:{' '}
+              <a href="mailto:privacy@maia-management.com" className="text-teal-400 hover:text-teal-300 transition-colors">
+                privacy@maia-management.com
+              </a>
+            </p>
+            <div className="flex gap-4 text-xs text-gray-500">
+              <Link href="/privacy/" className="hover:text-gray-400 transition-colors">Privacy Policy</Link>
+              <Link href="/terms/" className="hover:text-gray-400 transition-colors">Terms of Use</Link>
+            </div>
           </div>
         </div>
       </div>

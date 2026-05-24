@@ -7,10 +7,23 @@ interface Props {
   variant?: 'default' | 'featured' | 'compact';
 }
 
+// City-specific fallback thumbnails so cards aren't visually monotonous when
+// articles don't ship their own thumbnail. Falls back to the optimized hero
+// otherwise so we never render the old "No image" placeholder.
+const CITY_FALLBACK_IMAGES: Record<string, string> = {
+  medellin: '/images/medellin-valley.webp',
+  bogota: '/images/bogota-street.webp',
+  cartagena: '/images/cartagena-street.webp',
+  'santa-marta': '/images/tayrona-beach.webp',
+};
+
 export default function ArticleCard({ article, variant = 'default' }: Props) {
   const href = `/${article.city}/${article.category}/${article.slug}/`;
   const isCompact = variant === 'compact';
-  const thumbnailSrc = article.thumbnail || '/images/colombia-hero-optimized.webp';
+  const thumbnailSrc =
+    article.thumbnail ||
+    CITY_FALLBACK_IMAGES[article.city] ||
+    '/images/colombia-hero-optimized.webp';
 
   return (
     <article className={`group flex flex-col bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden h-full ${isCompact ? 'mb-4 last:mb-0' : ''}`}>

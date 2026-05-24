@@ -46,10 +46,14 @@ export const metadata: Metadata = {
   publisher: 'Ruta Colombia',
   alternates: {
     canonical: 'https://ruta-colombia.com',
-    languages: {
-      'en': 'https://ruta-colombia.com',
-      'es': 'https://ruta-colombia.com',
-    },
+  },
+  manifest: '/site.webmanifest',
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/apple-touch-icon.png',
   },
   openGraph: {
     type: 'website',
@@ -99,7 +103,6 @@ export default function RootLayout({
       <head>
         <WebSiteSchema />
         <TouristGuideSchema />
-        <link rel="icon" href="/favicon.ico" />
         <Script src="/consent-banner.js?v=20260430-ruta" strategy="afterInteractive" />
       </head>
       <body className="bg-cream min-h-screen flex flex-col">

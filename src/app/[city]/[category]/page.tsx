@@ -5,6 +5,7 @@ import ArticleCard from '@/components/ArticleCard';
 import { getAllArticlesByCity, getArticlesByCityAndCategory } from '@/lib/articles';
 import { categories } from '@/lib/categories';
 import { cities } from '@/lib/cities';
+import { BreadcrumbSchema } from '@/components/SchemaOrg';
 
 type CategoryParams = { city: string; category: string };
 
@@ -133,6 +134,13 @@ export default async function CategoryPage({ params }: Props) {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://ruta-colombia.com/' },
+          { name: city.name, url: `https://ruta-colombia.com/${citySlug}/` },
+          { name: category.name, url: `https://ruta-colombia.com/${citySlug}/${categorySlug}/` },
+        ]}
+      />
       {/* Category header */}
       <div className="mb-10">
         <div className="flex items-center gap-3 mb-2">

@@ -1,0 +1,21 @@
+{
+  "name": "Ruta Colombia",
+  "short_name": "Ruta Colombia",
+  "description": "Your definitive Colombia travel guide and expat resource.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f8f5ef",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

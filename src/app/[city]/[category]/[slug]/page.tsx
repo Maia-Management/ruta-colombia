@@ -5,7 +5,17 @@ import MaiaAd from '@/components/MaiaAd';
 import AdSense from '@/components/AdSense';
 import ArticleCard from '@/components/ArticleCard';
 import MarkdownContent from '@/components/MarkdownContent';
-import { ArticleSchema } from '@/components/SchemaOrg';
+import { ArticleSchema, BreadcrumbSchema } from '@/components/SchemaOrg';
+
+const CITY_OG_IMAGES: Record<string, string> = {
+  medellin: 'og-medellin.jpg',
+  bogota: 'og-bogota.jpg',
+  cartagena: 'og-cartagena.jpg',
+  'santa-marta': 'og-santa-marta.jpg',
+  cali: 'og-cali.jpg',
+  barranquilla: 'og-barranquilla.jpg',
+  bucaramanga: 'og-bucaramanga.jpg',
+};
 import { cities, getCityBySlug } from '@/lib/cities';
 import { categories, getCategoryBySlug } from '@/lib/categories';
 import {
@@ -29,16 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = getArticleByCityAndSlug(city, slug);
   if (!article) return {};
   const title = (article.metaTitle || article.title).replace(/\s*\|\s*Ruta Colombia\s*$/, '');
-  const cityOgImages: Record<string, string> = {
-    medellin: 'og-medellin.jpg',
-    bogota: 'og-bogota.jpg',
-    cartagena: 'og-cartagena.jpg',
-    'santa-marta': 'og-santa-marta.jpg',
-    cali: 'og-cali.jpg',
-    barranquilla: 'og-barranquilla.jpg',
-    bucaramanga: 'og-bucaramanga.jpg',
-  };
-  const ogFile = cityOgImages[city] ?? 'og-image.jpg';
+  const ogFile = CITY_OG_IMAGES[city] ?? 'og-image.jpg';
   const image = `https://ruta-colombia.com/${ogFile}`;
 
   return {
@@ -79,6 +80,8 @@ export default async function ArticlePage({ params }: Props) {
     .slice(0, 3);
 
   const articleUrl = `https://ruta-colombia.com/${citySlug}/${article.category}/${article.slug}/`;
+  const ogFile = CITY_OG_IMAGES[citySlug] ?? 'og-image.jpg';
+  const articleImage = `https://ruta-colombia.com/${ogFile}`;
 
   return (
     <>
@@ -89,6 +92,18 @@ export default async function ArticlePage({ params }: Props) {
         author={article.author}
         url={articleUrl}
         category={cat?.name || article.category}
+        image={articleImage}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://ruta-colombia.com/' },
+          { name: city.name, url: `https://ruta-colombia.com/${citySlug}/` },
+          {
+            name: cat?.name || article.category,
+            url: `https://ruta-colombia.com/${citySlug}/${article.category}/`,
+          },
+          { name: article.title, url: articleUrl },
+        ]}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
