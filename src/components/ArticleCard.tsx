@@ -10,19 +10,41 @@ interface Props {
 // City-specific fallback thumbnails so cards aren't visually monotonous when
 // articles don't ship their own thumbnail. Falls back to the optimized hero
 // otherwise so we never render the old "No image" placeholder.
-const CITY_FALLBACK_IMAGES: Record<string, string> = {
-  medellin: '/images/medellin-valley.webp',
-  bogota: '/images/bogota-street.webp',
-  cartagena: '/images/cartagena-street.webp',
-  'santa-marta': '/images/tayrona-beach.webp',
+const CITY_FALLBACK_IMAGES: Record<string, string[]> = {
+  medellin: [
+    '/images/medellin-valley.webp',
+    '/images/medellin-comuna13.webp',
+    '/images/medellin-el-poblado.webp',
+    '/images/medellin-botero-plaza.webp',
+  ],
+  bogota: ['/images/bogota-street.webp'],
+  cartagena: ['/images/cartagena-street.webp'],
+  'santa-marta': [
+    '/images/tayrona-beach.webp',
+    '/images/santa-marta-centro-historico.webp',
+    '/images/santa-marta-tayrona-jungle.webp',
+    '/images/santa-marta-sierra-nevada.webp',
+  ],
 };
+
+function pickCityFallback(city: string | undefined, slug: string | undefined): string | undefined {
+  if (!city) return undefined;
+  const pool = CITY_FALLBACK_IMAGES[city];
+  if (!pool || pool.length === 0) return undefined;
+  if (pool.length === 1 || !slug) return pool[0];
+  let hash = 0;
+  for (let i = 0; i < slug.length; i++) {
+    hash = ((hash << 5) - hash + slug.charCodeAt(i)) | 0;
+  }
+  return pool[Math.abs(hash) % pool.length];
+}
 
 export default function ArticleCard({ article, variant = 'default' }: Props) {
   const href = `/${article.city}/${article.category}/${article.slug}/`;
   const isCompact = variant === 'compact';
   const thumbnailSrc =
     article.thumbnail ||
-    CITY_FALLBACK_IMAGES[article.city] ||
+    pickCityFallback(article.city, article.slug) ||
     '/images/colombia-hero-optimized.webp';
 
   return (

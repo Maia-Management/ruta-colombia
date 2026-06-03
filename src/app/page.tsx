@@ -35,10 +35,16 @@ export const metadata: Metadata = {
 
 const medellinSlides = [
   { src: '/images/medellin-valley.webp', alt: 'Medellín skyline in the Aburrá Valley', caption: 'Medellín — City of Eternal Spring' },
+  { src: '/images/medellin-comuna13.webp', alt: 'Comuna 13 graffiti staircase in Medellín', caption: 'Comuna 13 — colour, music, reinvention' },
+  { src: '/images/medellin-el-poblado.webp', alt: 'El Poblado rooftop at golden hour, Medellín', caption: 'El Poblado — rooftops over the valley' },
+  { src: '/images/medellin-botero-plaza.webp', alt: 'Bronze sculpture in Plaza Botero, Medellín', caption: 'Plaza Botero — sculpture in open air' },
 ];
 
 const santaMartaSlides = [
   { src: '/images/tayrona-beach.webp', alt: 'Tayrona National Park beach near Santa Marta', caption: 'Tayrona National Park — jungle meets the Caribbean' },
+  { src: '/images/santa-marta-centro-historico.webp', alt: 'Colonial cobblestone street in Centro Histórico, Santa Marta', caption: 'Centro Histórico — colonial Santa Marta' },
+  { src: '/images/santa-marta-tayrona-jungle.webp', alt: 'Tayrona beach framed from inside the jungle', caption: 'Tayrona — turquoise bay framed by jungle' },
+  { src: '/images/santa-marta-sierra-nevada.webp', alt: 'Sierra Nevada de Santa Marta — green valley under cloud', caption: 'Sierra Nevada — Caribbean rises into cloud forest' },
 ];
 
 const bogotaSlides = [
