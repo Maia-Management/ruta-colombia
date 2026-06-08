@@ -57,8 +57,8 @@ export default function Footer() {
                 </li>
               ))}
               <li>
-                <Link href="/venezuela/" className="text-sm text-gray-500 hover:text-yellow-400 transition-colors italic">
-                  Venezuela ↗ (coming soon)
+                <Link href="/venezuela/" className="text-sm text-gray-400 hover:text-teal-400 transition-colors">
+                  Venezuela travel planning
                 </Link>
               </li>
             </ul>
