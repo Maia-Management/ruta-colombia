@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import Link from '@/components/Link';
 
 export const metadata: Metadata = {
-  title: 'Venezuela Travel Guide — Coming Soon',
+  title: 'Venezuela Travel Planning | Ruta Colombia',
   description:
-    'A comprehensive travel and expat guide to Venezuela is coming soon to Ruta Colombia. Get notified when it launches.',
+    'Private route planning and relocation research for Venezuela requests handled through Ruta Colombia.',
   alternates: {
     canonical: 'https://ruta-colombia.com/venezuela/',
   },
@@ -13,19 +13,19 @@ export const metadata: Metadata = {
     follow: false,
   },
   openGraph: {
-    title: 'Venezuela Travel Guide — Coming Soon | Ruta Colombia',
+    title: 'Venezuela Travel Planning | Ruta Colombia',
     description:
-      'A comprehensive travel and expat guide to Venezuela is coming soon to Ruta Colombia.',
+      'Private route planning and relocation research for Venezuela requests handled through Ruta Colombia.',
     url: 'https://ruta-colombia.com/venezuela/',
     type: 'website',
-    images: [{ url: 'https://ruta-colombia.com/og-image.jpg', width: 1200, height: 630, alt: 'Venezuela — Coming Soon' }],
+    images: [{ url: 'https://ruta-colombia.com/og-image.jpg', width: 1200, height: 630, alt: 'Venezuela travel planning' }],
   },
   twitter: {
     card: 'summary_large_image',
     site: '@RutaColombia',
     creator: '@RutaColombia',
-    title: 'Venezuela Travel Guide — Coming Soon | Ruta Colombia',
-    description: 'A comprehensive travel and expat guide to Venezuela is coming soon to Ruta Colombia.',
+    title: 'Venezuela Travel Planning | Ruta Colombia',
+    description: 'Private route planning and relocation research for Venezuela requests handled through Ruta Colombia.',
     images: ['https://ruta-colombia.com/og-image.jpg'],
   },
 };
@@ -38,22 +38,22 @@ export default function VenezuelaPage() {
           <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-4">
             Venezuela
           </h1>
-          <h2 className="text-2xl text-teal-400 font-semibold">Coming Soon</h2>
+          <h2 className="text-2xl text-teal-400 font-semibold">Travel Planning Desk</h2>
         </div>
 
         <div className="bg-gray-800 bg-opacity-50 rounded-2xl p-8 md:p-12 mb-8 border border-gray-700">
           <p className="text-gray-300 text-lg mb-6">
-            We&apos;re working on a comprehensive guide to living in Venezuela, covering cost of living, neighborhoods, visa information, and everything you need to know to make Venezuela your home.
+            Ruta Colombia handles Venezuela travel and relocation questions case by case, with practical research on routes, neighborhoods, visas, and risk controls for each trip.
           </p>
 
           <p className="text-gray-400 text-base mb-8">
-            Check back soon for detailed guides, travel tips, and practical advice from those living in Venezuela.
+            Use WhatsApp to request a briefing, local contact check, or custom route plan before you travel.
           </p>
 
           <div className="bg-teal-600 bg-opacity-10 border border-teal-500 rounded-lg p-6 mb-8">
-            <p className="text-white mb-3">Get notified when the Venezuela guide launches:</p>
+            <p className="text-white mb-3">Request a Venezuela planning brief:</p>
             <a
-              href="https://wa.me/19034598763?text=I'd%20like%20to%20be%20notified%20when%20the%20Venezuela%20guide%20is%20available"
+              href="https://wa.me/19034598763?text=I'd%20like%20a%20Venezuela%20travel%20planning%20brief"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#075E54] text-white px-6 py-3 rounded-full hover:bg-[#064C44] transition-colors font-medium"
@@ -61,7 +61,7 @@ export default function VenezuelaPage() {
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-5.031 1.378c-3.055 2.281-3.585 6.308-1.143 9.541 1.432 1.993 3.818 3.222 6.174 3.222 2.27 0 4.41-.896 6.015-2.516 3.325-3.325 3.833-8.585 1.122-12.88-.504-.692-1.223-1.322-2.031-1.793a9.87 9.87 0 00-4.107-.959zm8.717-2.096A11.885 11.885 0 0012.05 0C5.495 0 .16 5.335.16 11.905c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.687 1.448h.005c6.554 0 11.89-5.335 11.89-11.905 0-3.176-1.237-6.174-3.484-8.477z" />
               </svg>
-              Notify Me on WhatsApp
+              Request Brief on WhatsApp
             </a>
           </div>
 
