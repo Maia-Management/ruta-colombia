@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Colombia City Comparison: Santa Marta vs Medellín vs Cartagena vs Bogotá | Ruta Colombia</title>
+  <meta name="description" content="Compare Colombia's top expat cities side by side — cost of living, rent, climate, safety, internet, beaches and visa pointers for Santa Marta, Medellín, Cartagena and Bogotá. 2026 data.">
+  <link rel="canonical" href="https://ruta-colombia.com/tools/city-comparison/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Colombia City Comparison — Ruta Colombia">
+  <meta property="og:description" content="Santa Marta vs Medellín vs Cartagena vs Bogotá: cost, climate, safety, internet and visas, side by side.">
+  <meta property="og:url" content="https://ruta-colombia.com/tools/city-comparison/">
+  <meta property="og:image" content="https://ruta-colombia.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0f0f0f">
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --panel: #171717;
+      --panel-soft: #202020;
+      --line: #2c2c2c;
+      --text: #f8fafc;
+      --muted: #b7c0c7;
+      --soft: #d9e4e8;
+      --accent: #14b8a6;
+      --accent-dark: #0f766e;
+      --accent-soft: rgba(20, 184, 166, 0.14);
+      --warning: #f59e0b;
+      --whatsapp: #25d366;
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(135deg, rgba(20, 184, 166, 0.18), rgba(15, 15, 15, 0) 38%),
+        linear-gradient(180deg, #0b0b0b 0%, var(--bg) 52%, #101713 100%);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 28px 0 44px; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 34px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: 0.02em; text-decoration: none; }
+    .brand-mark { width: 34px; height: 34px; border-radius: 50%; background: var(--accent); display: grid; place-items: center; color: #052f2b; font-weight: 900; }
+    .back-link { color: var(--muted); font-size: 0.95rem; text-decoration: none; }
+
+    .hero { margin-bottom: 26px; padding: clamp(28px, 5vw, 52px); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; background: rgba(15,15,15,0.72); box-shadow: 0 20px 80px rgba(0,0,0,0.32); }
+    .eyebrow { display: inline-flex; align-items: center; gap: 9px; margin: 0 0 16px; color: #8df4e7; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 999px; background: var(--accent); }
+    h1 { max-width: 860px; margin: 0 0 16px; font-family: Georgia, Cambria, "Times New Roman", serif; font-size: clamp(2.1rem, 5.5vw, 4.4rem); line-height: 0.98; }
+    .lead { max-width: 720px; margin: 0; color: var(--soft); font-size: clamp(1rem, 2vw, 1.18rem); }
+
+    .picker { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 22px; }
+    .chip {
+      border: 1px solid var(--line); border-radius: 999px; background: var(--panel);
+      color: var(--muted); padding: 10px 18px; font: inherit; font-weight: 800; cursor: pointer;
+      transition: all .15s;
+    }
+    .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #052f2b; }
+    .chip:focus-visible { outline: 3px solid rgba(20,184,166,.55); outline-offset: 3px; }
+
+    .board { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .city-card { border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; background: rgba(23,23,23,0.94); overflow: hidden; display: flex; flex-direction: column; }
+    .city-head { padding: 18px; border-bottom: 1px solid var(--line); background: linear-gradient(180deg, rgba(20,184,166,0.12), transparent); }
+    .city-head h2 { margin: 0; font-family: Georgia, serif; font-size: 1.5rem; }
+    .city-head p { margin: 4px 0 0; color: var(--muted); font-size: 0.85rem; }
+    .row { padding: 12px 18px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .row:last-child { border-bottom: none; }
+    .row small { display: block; color: var(--muted); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 3px; }
+    .row strong { font-size: 0.98rem; }
+    .row p { margin: 2px 0 0; color: var(--soft); font-size: 0.85rem; line-height: 1.45; }
+    .bar-track { height: 6px; background: var(--panel-soft); border-radius: 999px; margin-top: 6px; overflow: hidden; }
+    .bar-fill { height: 100%; background: var(--accent); border-radius: 999px; }
+
+    .note-row { margin-top: 18px; color: var(--muted); font-size: 0.85rem; line-height: 1.6; }
+    .note-row a { color: #8df4e7; }
+
+    .cta { margin-top: 26px; display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 18px; align-items: center; border: 1px solid rgba(37,211,102,0.35); border-radius: 8px; background: rgba(37,211,102,0.09); padding: 22px; }
+    .cta h2 { margin: 0 0 4px; font-size: 1.18rem; }
+    .cta p { margin: 0; color: var(--muted); }
+    .cta-buttons { display: flex; gap: 10px; flex-wrap: wrap; }
+    .cta a.wa { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 8px; background: var(--whatsapp); color: #062a13; font-weight: 900; padding: 0 18px; text-decoration: none; white-space: nowrap; }
+    .cta a.alt { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 8px; border: 1px solid var(--accent); color: #8df4e7; font-weight: 900; padding: 0 18px; text-decoration: none; white-space: nowrap; }
+
+    @media (max-width: 900px) { .cta { grid-template-columns: 1fr; } }
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 22px, 1180px); padding-top: 18px; }
+      .topbar { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <nav class="topbar" aria-label="Page">
+      <a class="brand" href="/">
+        <span class="brand-mark">RC</span>
+        <span>Ruta Colombia</span>
+      </a>
+      <a class="back-link" href="/">Back to city guides</a>
+    </nav>
+
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Colombia planning tool</p>
+      <h1 id="page-title">Which city fits your life?</h1>
+      <p class="lead">Santa Marta, Medellín, Cartagena and Bogotá side by side — cost, climate, safety, internet, beach access and visa pointers. Tap the cities you're choosing between.</p>
+    </section>
+
+    <div class="picker" role="group" aria-label="Cities to compare">
+      <button class="chip" data-city="santamarta" aria-pressed="true">Santa Marta</button>
+      <button class="chip" data-city="medellin" aria-pressed="true">Medellín</button>
+      <button class="chip" data-city="cartagena" aria-pressed="true">Cartagena</button>
+      <button class="chip" data-city="bogota" aria-pressed="true">Bogotá</button>
+    </div>
+
+    <section class="board" id="board" aria-live="polite"></section>
+
+    <p class="note-row">
+      Figures are 2025–2026 planning estimates in USD (sensitive to the COP rate), triangulated from Numbeo, Expatistan, Nomads.com, local rental portals and Ookla city reports; visa rules per Cancillería (Resolución 5477/2022) and the 2026 minimum-wage update. Safety notes are practical, not exhaustive — conditions change, check current advisories. Want the full monthly math? Run the <a href="/tools/budget-calculator/">budget calculator</a> or read our <a href="/santa-marta/">city guides</a>.
+    </p>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <div>
+        <h2 id="cta-title">Narrowed it down?</h2>
+        <p>Chat with Maia about housing, visas and a realistic landing plan in your chosen city.</p>
+      </div>
+      <div class="cta-buttons">
+        <a class="alt" href="/tools/budget-calculator/">Budget calculator</a>
+        <a class="wa" href="https://wa.me/19034598763?text=I%20compared%20cities%20on%20Ruta%20Colombia%20and%20want%20to%20plan%20my%20move" target="_blank" rel="noopener noreferrer">Plan my move &rarr;</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    /* ── 2025-26 data, June 2026 ──────────────────────────────────────
+       Cost of living (single, excl. rent) + 1BR rent (good area), USD:
+       Numbeo (Medellín ~$625, Bogotá ~$607), Expatistan city indexes,
+       Nomads.com; Santa Marta & Cartagena interpolated (thinner samples).
+       Internet: Ookla H2-2024 city medians via financecolombia.com
+       (Cartagena fastest fixed ~180 Mbps; Medellín fastest mobile).
+       Visas: V nómada digital ≥ 3× SMMLV foreign income
+       (2026: COP 5,252,715/mo ≈ USD ~1,400), up to 2 years,
+       Resolución 5477/2022; M-pensionado ≥ 3× SMMLV pension.
+       Climate: standard geographic data.
+       costIdx bars: relative monthly cost vs Bogotá=100 (estimates). */
+    var CITIES = {
+      santamarta: {
+        name: 'Santa Marta',
+        tag: 'Caribbean beach base · small-city pace',
+        cost: '$450–550', rent: '$300–700', costIdx: 78,
+        climate: '28–32°C year-round, sea level, drier than Cartagena; windy Dec–Feb, rains Sep–Nov',
+        safety: 'Small-city feel. Rodadero and the historic center are fine by day; standard Caribbean-city caution at night. Don’t flash phones.',
+        internet: '~50–100 Mbps typical in town; check fiber building-by-building outside the center',
+        beach: 'Urban beaches + Tayrona National Park 40 min away',
+        transit: 'Walkable neighborhoods, cheap taxis; no mass transit',
+        scene: 'Small but growing expat/nomad scene; tight-knit',
+        visa: 'Digital-nomad V visa: ~USD 1,400/mo foreign income (3× SMMLV), up to 2 years'
+      },
+      medellin: {
+        name: 'Medellín',
+        tag: 'Eternal spring · Colombia’s nomad capital',
+        cost: '~$625', rent: '$450–1,000', costIdx: 95,
+        climate: '22–23°C all year at 1,495 m — no AC, no heating; rains Apr–May & Sep–Nov',
+        safety: 'Homicide rate near US mid-size-city levels; Poblado/Laureles/Envigado are the expat zones. Main cautions: phone theft, dating-app scams.',
+        internet: 'Excellent fiber (300+ Mbps common); fastest mobile in Colombia',
+        beach: 'None — 4–5 hours to the coast',
+        transit: 'Best in Colombia: Metro, cable cars; Laureles very walkable',
+        scene: 'Largest nomad hub in the country; huge coworking/event circuit',
+        visa: 'Same national rules — V nómada digital or M visas; biggest visa-agency ecosystem'
+      },
+      cartagena: {
+        name: 'Cartagena',
+        tag: 'Walled-city romance · tourism economy',
+        cost: '$650–700', rent: '$500–1,000', costIdx: 105,
+        climate: '28–31°C, very humid year-round; dry Dec–Apr, rains Aug–Nov',
+        safety: 'Tourist-policed walled city and Bocagrande feel safe; more street hustle/overcharging than violent crime. Caution outside the tourist core.',
+        internet: 'Fastest fixed broadband of the four (median ~180 Mbps, Ookla)',
+        beach: 'Urban beaches mediocre; Rosario Islands are the real draw',
+        transit: 'Walled city very walkable; elsewhere taxi/Transcaribe BRT',
+        scene: 'Mid-size, tourism-skewed, seasonal crowd',
+        visa: 'Same national rules; high-season rents spike — negotiate long-term'
+      },
+      bogota: {
+        name: 'Bogotá',
+        tag: 'Capital energy · big-city careers',
+        cost: '~$607', rent: '$500–700', costIdx: 100,
+        climate: 'Cool 14–15°C at 2,640 m; chilly nights, rains Mar–May & Oct–Nov',
+        safety: 'Classic big-city rules: pickpocketing and phone snatching. North (Usaquén, Chapinero, Zona Rosa) is routine for expats; avoid Centro late.',
+        internet: 'Strong fiber widely available (100–300 Mbps plans)',
+        beach: 'None — flights to the coast from ~$30',
+        transit: 'TransMilenio BRT (crowded), metro under construction; Chapinero/Usaquén walkable',
+        scene: 'Large corporate/professional expat base; culture and food capital',
+        visa: 'Same national rules; most consulates/agencies for paperwork runs'
+      }
+    };
+
+    var ROWS = [
+      ['cost',     'Monthly cost (excl. rent)', true],
+      ['rent',     '1BR rent, good area', false],
+      ['climate',  'Climate', false],
+      ['safety',   'Safety notes', false],
+      ['internet', 'Internet', false],
+      ['beach',    'Beach', false],
+      ['transit',  'Getting around', false],
+      ['scene',    'Expat & nomad scene', false],
+      ['visa',     'Visa pointer', false]
+    ];
+
+    function render() {
+      var picked = Array.prototype.filter.call(document.querySelectorAll('.chip'), function (c) {
+        return c.getAttribute('aria-pressed') === 'true';
+      }).map(function (c) { return c.dataset.city; });
+
+      var board = document.getElementById('board');
+      board.innerHTML = picked.map(function (key) {
+        var c = CITIES[key];
+        var rows = ROWS.map(function (r) {
+          var val = c[r[0]];
+          var bar = r[2] ? '<div class="bar-track" aria-hidden="true"><div class="bar-fill" style="width:' + Math.min(100, c.costIdx) + '%"></div></div>' : '';
+          var body = (r[0] === 'cost' || r[0] === 'rent')
+            ? '<strong>' + val + '</strong>' + bar
+            : '<p>' + val + '</p>';
+          return '<div class="row"><small>' + r[1] + '</small>' + body + '</div>';
+        }).join('');
+        return '<article class="city-card"><div class="city-head"><h2>' + c.name + '</h2><p>' + c.tag + '</p></div>' + rows + '</article>';
+      }).join('');
+
+      if (!picked.length) {
+        board.innerHTML = '<p style="color:var(--muted)">Pick at least one city above.</p>';
+      }
+    }
+
+    document.querySelectorAll('.chip').forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        var on = chip.getAttribute('aria-pressed') === 'true';
+        chip.setAttribute('aria-pressed', String(!on));
+        render();
+      });
+    });
+
+    render();
+  </script>
+</body>
+</html>

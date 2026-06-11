@@ -113,6 +113,12 @@ export default function Footer() {
               <li>
                 <Link href="/contact/" className="hover:text-teal-400 transition-colors">Contact</Link>
               </li>
+              <li>
+                <a href="/tools/budget-calculator/" className="hover:text-teal-400 transition-colors">Budget calculator</a>
+              </li>
+              <li>
+                <a href="/tools/city-comparison/" className="hover:text-teal-400 transition-colors">City comparison</a>
+              </li>
             </ul>
           </div>
         </div>
