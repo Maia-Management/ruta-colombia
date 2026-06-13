@@ -93,6 +93,7 @@ export default function Footer() {
                 { name: 'Be Vida', url: 'https://be-vida.com' },
                 { name: 'El Sanatorio', url: 'https://el-sanatorio.com' },
                 { name: 'LlevaLleva', url: 'https://lleva-lleva.com' },
+                { name: 'Sushi Pop', url: 'https://sushi-pop.co' },
               ].map((brand) => (
                 <li key={brand.name}>
                   <a
