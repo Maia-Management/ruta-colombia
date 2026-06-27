@@ -46,6 +46,11 @@ export const metadata: Metadata = {
   publisher: 'Ruta Colombia',
   alternates: {
     canonical: 'https://ruta-colombia.com',
+    languages: {
+      'en': 'https://ruta-colombia.com',
+      'en-US': 'https://ruta-colombia.com',
+      'x-default': 'https://ruta-colombia.com',
+    },
   },
   manifest: '/site.webmanifest',
   icons: {
