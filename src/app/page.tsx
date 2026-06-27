@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     'Colombia travel and expat guides for Medellín, Cartagena, Santa Marta, Bogotá, Cali, and more: things to do, living costs, neighbourhoods, and restaurants.',
   alternates: {
     canonical: 'https://ruta-colombia.com/',
+    languages: {
+      'en': 'https://ruta-colombia.com/',
+      'en-US': 'https://ruta-colombia.com/',
+      'x-default': 'https://ruta-colombia.com/',
+    },
   },
   openGraph: {
     title: 'Ruta Colombia — Colombia Travel Guide & Expat Resource',
