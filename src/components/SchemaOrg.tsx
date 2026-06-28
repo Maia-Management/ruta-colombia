@@ -32,9 +32,10 @@ interface ArticleSchemaProps {
   category: string;
   dateModified?: string;
   image?: string;
+  lang?: string;
 }
 
-export function ArticleSchema({ title, description, datePublished, dateModified, author, url, category, image }: ArticleSchemaProps) {
+export function ArticleSchema({ title, description, datePublished, dateModified, author, url, category, image, lang }: ArticleSchemaProps) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -61,7 +62,7 @@ export function ArticleSchema({ title, description, datePublished, dateModified,
       '@id': url,
     },
     articleSection: category,
-    inLanguage: 'en',
+    inLanguage: lang || 'en',
   };
 
   return (
@@ -85,14 +86,6 @@ export function WebSiteSchema() {
       '@type': 'Organization',
       name: 'The Maia Group',
       url: 'https://the-maia-group.com',
-    },
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: 'https://ruta-colombia.com/medellin/things-to-do/?q={search_term_string}',
-      },
-      'query-input': 'required name=search_term_string',
     },
   };
 

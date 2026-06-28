@@ -15,6 +15,7 @@ const CITY_OG_IMAGES: Record<string, string> = {
   cali: 'og-cali.jpg',
   barranquilla: 'og-barranquilla.jpg',
   bucaramanga: 'og-bucaramanga.jpg',
+  colombia: 'og-image.jpg',
 };
 import { cities, getCityBySlug } from '@/lib/cities';
 import { categories, getCategoryBySlug } from '@/lib/categories';
@@ -41,18 +42,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = (article.metaTitle || article.title).replace(/\s*\|\s*Ruta Colombia\s*$/, '');
   const ogFile = CITY_OG_IMAGES[city] ?? 'og-image.jpg';
   const image = `https://ruta-colombia.com/${ogFile}`;
+  const canonical = article.canonicalUrl || `https://ruta-colombia.com/${city}/${category}/${slug}/`;
+  const isSpanish = article.lang === 'es';
+  const ogLocale = isSpanish ? 'es_CO' : 'en_US';
 
   return {
     title,
     description: article.metaDescription || article.excerpt,
     authors: [{ name: article.author }],
     alternates: {
-      canonical: `https://ruta-colombia.com/${city}/${category}/${slug}/`,
+      canonical,
+      ...(isSpanish
+        ? { languages: { 'es-CO': canonical, 'es': canonical } }
+        : {}),
     },
     openGraph: {
       title,
       description: article.metaDescription || article.excerpt,
       type: 'article',
+      locale: ogLocale,
       publishedTime: article.date,
       authors: [article.author],
       images: [{ url: image, width: 1200, height: 630, alt: title }],
@@ -93,6 +101,7 @@ export default async function ArticlePage({ params }: Props) {
         url={articleUrl}
         category={cat?.name || article.category}
         image={articleImage}
+        lang={article.lang}
       />
       <BreadcrumbSchema
         items={[

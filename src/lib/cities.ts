@@ -79,6 +79,16 @@ export const cities: City[] = [
     heroGradient: 'from-orange-950 via-orange-800 to-orange-600',
     accentColor: '#ea580c',
   },
+  {
+    slug: 'colombia',
+    name: 'Colombia (Nationwide)',
+    tagline: 'Country-wide guides for expats',
+    description:
+      'Country-wide expat essentials that apply across Colombia — banking, taxes, visas, driving, SIM cards, coworking, schools, and starting a business — not tied to any single city.',
+    region: 'Colombia',
+    heroGradient: 'from-yellow-700 via-blue-700 to-red-700',
+    accentColor: '#1d4ed8',
+  },
 ];
 
 export function getCityBySlug(slug: string): City | undefined {

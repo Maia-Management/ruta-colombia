@@ -46,11 +46,6 @@ export const metadata: Metadata = {
   publisher: 'Ruta Colombia',
   alternates: {
     canonical: 'https://ruta-colombia.com',
-    languages: {
-      'en': 'https://ruta-colombia.com',
-      'en-US': 'https://ruta-colombia.com',
-      'x-default': 'https://ruta-colombia.com',
-    },
   },
   manifest: '/site.webmanifest',
   icons: {
@@ -79,7 +74,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@MaiaGroupCO',
+    site: '@RutaColombia',
     creator: '@RutaColombia',
     title: 'Ruta Colombia — Colombia Travel Guide & Expat Resource',
     description: 'Your definitive guide to travelling, living, and investing in Colombia.',
@@ -108,7 +103,7 @@ export default function RootLayout({
       <head>
         <WebSiteSchema />
         <TouristGuideSchema />
-        <Script src="/consent-banner.js?v=20260430-ruta" strategy="afterInteractive" />
+        <Script src="/consent-banner.js?v=20260628-en" strategy="afterInteractive" />
       </head>
       <body className="bg-cream min-h-screen flex flex-col">
         <ConsentScripts />
