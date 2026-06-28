@@ -99,3 +99,10 @@ desktop.ini
 .worktrees/
 *.tmp
 *.bak
+
+# Playwright MCP scratch (screenshots and snapshots from live-site audits)
+.playwright-mcp/
+ruta-home-*.png
+ruta-home-*.yml
+ruta-santa-marta-*.png
+ruta-tayrona-*.png

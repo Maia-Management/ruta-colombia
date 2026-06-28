@@ -84,44 +84,44 @@
         <div class="consent-banner-overlay"></div>
         <div class="consent-banner-content">
           <div class="consent-banner-header">
-            <h2>Preferencias de Privacidad</h2>
-            <p>Usamos tecnologías como cookies para almacenar y acceder a información de dispositivos, garantizar calidad de contenido y publicidad personalizada, medir rendimiento y analizar datos de tráfico. Puedes cambiar tus preferencias en cualquier momento visitando nuestras <a href="/privacy/" target="_blank">políticas de privacidad</a>.</p>
+            <h2>Privacy Preferences</h2>
+            <p>We use technologies like cookies to store and access device information, ensure content quality and personalized advertising, measure performance, and analyze traffic data. You can change your preferences at any time in our <a href="/privacy/" target="_blank">privacy policy</a>.</p>
           </div>
 
           <div class="consent-banner-customization" id="consent-customization" style="display: none;">
             <div class="consent-option">
               <label>
                 <input type="checkbox" class="consent-toggle" data-type="ad_storage">
-                <span>Almacenamiento de Publicidad</span>
+                <span>Ad Storage</span>
               </label>
-              <p class="consent-desc">Permite el almacenamiento de cookies para publicidad dirigida.</p>
+              <p class="consent-desc">Allows storing cookies for targeted advertising.</p>
             </div>
             <div class="consent-option">
               <label>
                 <input type="checkbox" class="consent-toggle" data-type="analytics_storage">
-                <span>Almacenamiento de Analítica</span>
+                <span>Analytics Storage</span>
               </label>
-              <p class="consent-desc">Permite recopilar datos anónimos sobre cómo usas el sitio.</p>
+              <p class="consent-desc">Allows collecting anonymous data about how you use the site.</p>
             </div>
             <div class="consent-option">
               <label>
                 <input type="checkbox" class="consent-toggle" data-type="ad_user_data">
-                <span>Datos de Usuario para Publicidad</span>
+                <span>Ad User Data</span>
               </label>
-              <p class="consent-desc">Permite enviar datos de usuario a plataformas publicitarias.</p>
+              <p class="consent-desc">Allows sending user data to advertising platforms.</p>
             </div>
             <div class="consent-option">
               <label>
                 <input type="checkbox" class="consent-toggle" data-type="ad_personalization">
-                <span>Personalización de Publicidad</span>
+                <span>Ad Personalization</span>
               </label>
-              <p class="consent-desc">Permite mostrar publicidad personalizada según tus intereses.</p>
+              <p class="consent-desc">Allows showing personalized advertising based on your interests.</p>
             </div>
           </div>
 
           <div class="consent-banner-footer">
             <small>
-              <strong>Cumplimiento Legal:</strong> Ley 1581 de 2012 (Protección de Datos en Colombia)
+              <strong>Legal Compliance:</strong> Colombia Ley 1581 de 2012 (Data Protection)
               <br/>MAIA MANAGEMENT S.A.S. — NIT 901.862.977-7
               <br/>Calle 24 #3-99, Edificio Banco de Bogotá, Suite 1102, Level 11, Santa Marta
             </small>
@@ -129,13 +129,13 @@
 
           <div class="consent-banner-actions">
             <button id="consent-customize-btn" class="consent-btn consent-btn-secondary">
-              Personalizar
+              Customize
             </button>
             <button id="consent-reject-btn" class="consent-btn consent-btn-secondary">
-              Rechazar
+              Reject
             </button>
             <button id="consent-accept-btn" class="consent-btn consent-btn-primary">
-              Aceptar todo
+              Accept all
             </button>
           </div>
         </div>

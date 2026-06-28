@@ -28,12 +28,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   const articleUrls = cities.flatMap((city) =>
-    getAllArticlesByCity(city.slug).map((article) => ({
-      url: `${baseUrl}/${city.slug}/${article.category}/${article.slug}/`,
-      lastModified: new Date(article.date),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    }))
+    getAllArticlesByCity(city.slug)
+      .filter((article) => !article.canonicalUrl)
+      .map((article) => ({
+        url: `${baseUrl}/${city.slug}/${article.category}/${article.slug}/`,
+        lastModified: new Date(article.date),
+        changeFrequency: 'monthly' as const,
+        priority: 0.8,
+      }))
   );
 
   return [

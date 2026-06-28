@@ -89,11 +89,16 @@ export default function Footer() {
                 { name: 'Maia Realty', url: 'https://maia-realty.com' },
                 { name: 'Maia Legal', url: 'https://maia-legal.com' },
                 { name: 'Maia Management', url: 'https://maia-management.com' },
+                { name: 'Maia Marketing', url: 'https://maia-marketing.com' },
+                { name: 'Maia Contable', url: 'https://maia-contable.com' },
+                { name: 'Maia Juridica', url: 'https://maia-juridica.com' },
+                { name: 'Maia Masters', url: 'https://maia-masters.com' },
                 { name: 'Mapaná Marine', url: 'https://mapana-marine.com' },
                 { name: 'Be Vida', url: 'https://be-vida.com' },
                 { name: 'El Sanatorio', url: 'https://el-sanatorio.com' },
                 { name: 'LlevaLleva', url: 'https://lleva-lleva.com' },
                 { name: 'Sushi Pop', url: 'https://sushi-pop.co' },
+                { name: 'Juno Retreats', url: 'https://juno-retreats.com' },
               ].map((brand) => (
                 <li key={brand.name}>
                   <a
