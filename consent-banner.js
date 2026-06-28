@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Consent Banner - Ruta Colombia
  * GDPR + Ley 1581 de 2012 (Colombia) compliance
  * Company: MAIA MANAGEMENT S.A.S. — NIT 901.862.977-7
